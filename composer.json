@@ -1,0 +1,31 @@
+{
+    "name": "johnathan/nova-trumbowyg",
+    "description": "A Laravel Nova wrapper for the Trumbowyg WYSIWYG editor",
+    "keywords": [
+        "laravel",
+        "nova",
+        "wysiwyg",
+        "trumbowyg"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Johnathan\\NovaTrumbowyg\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Johnathan\\NovaTrumbowyg\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
