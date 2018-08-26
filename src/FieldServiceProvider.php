@@ -15,6 +15,10 @@ class FieldServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->publishes([
+            __DIR__.'../fonts/vendor' => public_path('fonts/vendor'),
+        ], 'public');
+
         Nova::serving(function (ServingNova $event) {
             Nova::script('nova-trumbowyg', __DIR__.'/../dist/js/field.js');
             Nova::style('nova-trumbowyg', __DIR__.'/../dist/css/field.css');

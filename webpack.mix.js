@@ -12,5 +12,3 @@ mix.autoload({
     'jquery': ['$', 'window.jQuery', 'jQuery'],
     'vue': ['Vue','window.Vue'],
 });
-
-mix.copy('fonts', '../../public/fonts');
