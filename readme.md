@@ -4,6 +4,7 @@ Nova field wrapper around the [vue-trumbowyg](https://github.com/ankurk91/vue-tr
 
 ## Installation
 1. `composer require johnathan/nova-trumbowyg`
+2. Run `php artisan vendor:publish --tag=public` to puslish the icon font to the public directory
 2. That's it.
 
 ## Usage
