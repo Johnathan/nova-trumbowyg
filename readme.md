@@ -1,3 +1,5 @@
+[![Latest Stable Version](https://poser.pugx.org/johnathan/nova-trumbowyg/v/stable)](https://packagist.org/packages/johnathan/nova-trumbowyg) [![Total Downloads](https://poser.pugx.org/johnathan/nova-trumbowyg/downloads)](https://packagist.org/packages/johnathan/nova-trumbowyg) [![Latest Unstable Version](https://poser.pugx.org/johnathan/nova-trumbowyg/v/unstable)](https://packagist.org/packages/johnathan/nova-trumbowyg) [![License](https://poser.pugx.org/johnathan/nova-trumbowyg/license)](https://packagist.org/packages/johnathan/nova-trumbowyg)
+
 # Nova Trumbowyg
 
 Nova field wrapper around the [vue-trumbowyg](https://github.com/ankurk91/vue-trumbowyg) which is a wrapper around [trumbowyg](https://alex-d.github.io/Trumbowyg/).
