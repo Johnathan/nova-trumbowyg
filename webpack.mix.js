@@ -8,6 +8,8 @@ mix.js('resources/js/field.js', 'dist/js')
         }
     });
 
+mix.copy('node_modules/trumbowyg/plugins', 'js/vendor/plugins');
+
 mix.autoload({
     'jquery': ['$', 'window.jQuery', 'jQuery'],
     'vue': ['Vue','window.Vue'],
