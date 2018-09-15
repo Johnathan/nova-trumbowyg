@@ -16,7 +16,6 @@
 import { FormField, HandlesValidationErrors } from 'laravel-nova'
 import trumbowyg from 'vue-trumbowyg';
 import 'trumbowyg/dist/plugins/upload/trumbowyg.upload'
-import 'trumbowyg/dist/plugins/base64/trumbowyg.base64'
 import 'trumbowyg/dist/ui/trumbowyg.css';
 
 export default {
