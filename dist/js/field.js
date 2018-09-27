@@ -10701,6 +10701,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -10715,7 +10718,19 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("panel-item", { attrs: { field: _vm.field } })
+  return _c(
+    "panel-item",
+    { attrs: { field: _vm.field } },
+    [
+      _c("template", { slot: "value" }, [
+        _c("div", {
+          staticClass: "trumbowyg-details",
+          domProps: { innerHTML: _vm._s(_vm.field.value) }
+        })
+      ])
+    ],
+    2
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -23408,7 +23423,12 @@ var render = function() {
         _c(
           "div",
           {
-            class: [_vm.errorClasses, _vm.errorClasses.length ? "border" : ""]
+            class: [_vm.errorClasses, _vm.errorClasses.length ? "border" : ""],
+            on: {
+              keydown: function($event) {
+                $event.stopPropagation()
+              }
+            }
           },
           [
             _c("trumbowyg", {
