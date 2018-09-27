@@ -1,7 +1,7 @@
 <template>
     <default-field :field="field">
         <template slot="field">
-            <div :class="[errorClasses, errorClasses.length ? 'border' : '']">
+            <div :class="[errorClasses, errorClasses.length ? 'border' : '']" @keydown.stop>
                 <trumbowyg v-model="value" :config="field.options"></trumbowyg>
             </div>
 
