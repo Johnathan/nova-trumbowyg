@@ -2,7 +2,7 @@
     <default-field :field="field">
         <template slot="field">
             <div :class="[errorClasses, errorClasses.length ? 'border' : '']" @keydown.stop>
-                <trumbowyg v-model="value" :config="field.options" v-if="ready"></trumbowyg>
+                <trumbowyg v-model="value" :config="field.options"></trumbowyg>
             </div>
 
             <p v-if="hasError" class="my-2 text-danger">
@@ -22,17 +22,11 @@ export default {
 
     props: ['resourceName', 'resourceId', 'field'],
 
-    data() {
-        return {
-            ready: false
-        };
-    },
-
     mounted() {
         if(this.field.plugins.length)
         {
-            this.field.plugins.forEach((path, index) => {
-                $.getScript(path)
+            this.field.plugins.forEach((path) => {
+                console.log({path});
             });
         }
     },
