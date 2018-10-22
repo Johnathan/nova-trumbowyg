@@ -21,11 +21,13 @@ class NovaTrumbowyg extends Field
 
     public function withPlugins($plugins = [])
     {
+        $pluginPaths = [];
+
         foreach($plugins as $plugin)
         {
-            // Do something to load the actual js file here
+            $pluginPaths[] = asset('js/vendor/nova-trumbowyg/plugins/trumbowyg.' . $plugin . '.js');
         }
 
-        return $this;
+        return $this->withMeta(['plugins' => $pluginPaths]);
     }
 }
