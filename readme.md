@@ -47,3 +47,16 @@ You can also pass in an array of options to use with Trumbowyg
         ];
     }
 ```
+
+By default, the Trumbowyg field will not display their content when viewing a resource on its detail page. It will be hidden behind a "Show Content" link, that when clicked will reveal the content. You may specify the Trumbowyg field should always display its content by calling the alwaysShow method on the field itself
+
+```
+    public function fields(Request $request)
+    {
+        return [
+            ...,
+            NovaTrumbowyg::make('body')->alwaysShow(),
+            ...
+        ];
+    }
+```
