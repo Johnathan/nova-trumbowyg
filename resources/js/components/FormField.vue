@@ -1,5 +1,5 @@
 <template>
-    <default-field :field="field">
+    <default-field :field="field" :full-width-content="field.fullWidth">
         <template slot="field">
             <div :class="[errorClasses, errorClasses.length ? 'border' : '']" @keydown.stop>
                 <trumbowyg v-model="value" :config="field.options"></trumbowyg>
