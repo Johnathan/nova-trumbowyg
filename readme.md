@@ -60,3 +60,16 @@ By default, the Trumbowyg field will not display their content when viewing a re
         ];
     }
 ```
+
+By default, the Trumbowyg field will display in full width you can change this back to Nova's default (half) by using the `defaultWidth` method on the field, as shown below.
+
+```
+    public function fields(Request $request)
+    {
+        return [
+            ...,
+            NovaTrumbowyg::make('body')->defaultWidth(),
+            ...
+        ];
+    }
+```
