@@ -1,7 +1,7 @@
 <template>
         <panel-item :field="field">
                 <template slot="value">
-                        <excerpt class="trumbowyg-details" :content="field.value" />
+                        <excerpt class="trumbowyg-details" :content="field.value" :should-show="field.shouldShow" />
                 </template>
         </panel-item>
 </template>
